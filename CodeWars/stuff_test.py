@@ -1,4 +1,9 @@
-s = 'sTreSS'
-print(next(x for x in s if len([y for y in s if y == x.lower()]) == 1))
+words = ['aabb', 'abcd', 'bbaa', 'dada']
+sorted_words = []
+for i in words:
+    a = sorted(i)
+    b = "".join(a)
+    sorted_words.append(b)
+print(sorted_words)
 
 
